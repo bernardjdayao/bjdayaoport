@@ -1,8 +1,8 @@
-import { FiCheckCircle, FiExternalLink, FiGithub } from 'react-icons/fi';
+import { FiCheckCircle, FiGithub } from 'react-icons/fi';
 import type { Project } from '../../types';
 import { Badge } from './Badge';
 
-const STATUS_LABEL: Record<Project['status'], string> = {
+const STATUS_LABEL: Record<NonNullable<Project['status']>, string> = {
   shipped: 'Shipped',
   live: 'Live',
   archived: 'Case study',

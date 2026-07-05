@@ -5,6 +5,7 @@ export interface Project {
   description: string;
   achievements: string[];
   tech: string[];
+  status?: 'shipped' | 'live' | 'archived';
   github?: string;
   demo?: string;
   image?: string;
