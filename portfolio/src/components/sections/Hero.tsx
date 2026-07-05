@@ -3,6 +3,8 @@ import { FiArrowRight, FiDownload, FiGithub, FiLinkedin, FiMail } from 'react-ic
 import { SITE } from '../../constants/content';
 import { staggerContainer, fadeUp } from '../../animations/variants';
 
+const basePath = import.meta.env.BASE_URL;
+
 const STATUS_ROWS = [
   { label: 'auth', value: 'mTLS verified', ok: true },
   { label: 'cipher', value: 'AES-256-GCM', ok: true },
@@ -71,7 +73,7 @@ export function Hero() {
             <a href="#projects" className="btn-primary">
               View Projects <FiArrowRight aria-hidden />
             </a>
-            <a href="/resume.pdf" download className="btn-secondary">
+            <a href={`${basePath}resume.pdf`} download className="btn-secondary">
               Download Resume <FiDownload aria-hidden />
             </a>
           </motion.div>
