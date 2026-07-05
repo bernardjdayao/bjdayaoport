@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0F172A" />
+    <script>
+      (function () {
+        var stored = localStorage.getItem('theme');
+        var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (dark) document.documentElement.classList.add('dark');
+        document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+      })();
+    </script>
+    <title>Bernard Justin Dayao — Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="Building secure, scalable, and user-centered digital experiences with modern web technologies."
+    />
+    <script type="module" crossorigin src="/portfolio/assets/index-Bcm6FlBF.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CbgRkgIZ.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
