@@ -31,6 +31,7 @@ export interface Certification {
   id: string;
   name: string;
   issuer: string;
+  image?: string; // path relative to public/, e.g. /images/certifications/techplus.png
 }
 
 export interface SkillGroup {

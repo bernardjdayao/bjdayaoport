@@ -71,7 +71,7 @@ export function Hero() {
             <a href="#projects" className="btn-primary">
               View Projects <FiArrowRight aria-hidden />
             </a>
-            <a href="/resume.pdf" download className="btn-secondary">
+            <a href="public/resume.pdf" download className="btn-secondary">
               Download Resume <FiDownload aria-hidden />
             </a>
           </motion.div>

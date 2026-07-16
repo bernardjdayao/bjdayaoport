@@ -127,9 +127,34 @@ export const EDUCATION: EducationItem[] = [
 ];
 
 export const CERTIFICATIONS: Certification[] = [
-  { id: 'comptia', name: 'CompTIA Tech+', issuer: 'CompTIA' },
-  { id: 'ethical-hacker', name: 'Ethical Hacker', issuer: 'Cisco' },
-  { id: 'ccna-intro', name: 'CCNA: Introduction to Networks', issuer: 'Cisco' },
-  { id: 'ccna-srwe', name: 'CCNA: Switching, Routing & Wireless Essentials', issuer: 'Cisco' },
-  { id: 'gcp-foundations', name: 'Google Cloud Computing Foundations', issuer: 'Google Cloud' },
+  {
+    id: 'comptia',
+    name: 'CompTIA Tech+',
+    issuer: 'CompTIA',
+    image: '/images/certifications/comptia.png',
+  },
+  {
+    id: 'ethical-hacker',
+    name: 'Ethical Hacker',
+    issuer: 'Cisco',
+    image: '/images/certifications/ethical-hacker.png',
+  },
+  {
+    id: 'ccna-intro',
+    name: 'CCNA: Introduction to Networks',
+    issuer: 'Cisco',
+    image: '/images/certifications/ccnaintro.png',
+  },
+  {
+    id: 'ccna-srwe',
+    name: 'CCNA: Switching, Routing & Wireless Essentials',
+    issuer: 'Cisco',
+    image: '/images/certifications/ccnaswre.png',
+  },
+  {
+    id: 'gcp-foundations',
+    name: 'Google Cloud Computing Foundations',
+    issuer: 'Google Cloud',
+    image: '/images/certifications/gccf.png',
+  },
 ];

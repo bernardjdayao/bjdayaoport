@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f3f4f6"/>
+  <rect x="80" y="80" width="1040" height="640" rx="28" fill="white" stroke="#d1d5db" stroke-width="4"/>
+  <rect x="140" y="170" width="280" height="22" rx="11" fill="#2563eb" opacity="0.15"/>
+  <rect x="140" y="220" width="360" height="18" rx="9" fill="#94a3b8" opacity="0.3"/>
+  <rect x="140" y="270" width="420" height="18" rx="9" fill="#94a3b8" opacity="0.3"/>
+  <rect x="140" y="330" width="340" height="180" rx="20" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="600" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#475569">Certificate preview</text>
+  <text x="600" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#64748b">Add your image to this section</text>
+</svg>

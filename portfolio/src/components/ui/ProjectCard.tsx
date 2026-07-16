@@ -17,20 +17,28 @@ const STATUS_COLOR: Record<Project['status'], string> = {
 
 export function ProjectCard({ project }: { project: Project }) {
   const [imgError, setImgError] = useState(false);
-  const hasImage = !!project.image && !imgError;
+  const resolveAssetUrl = (path?: string) => {
+    if (!path) return undefined;
+    return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+  };
+
+  const imageSrc = resolveAssetUrl(project.image);
+  const hasImage = !!imageSrc && !imgError;
 
   return (
     <article className="card group flex h-full flex-col overflow-hidden hover:-translate-y-1.5 hover:shadow-xl hover:shadow-secondary/8 dark:hover:shadow-black/30">
       {/* Project image / fallback gradient */}
-      <div className="relative h-44 overflow-hidden bg-secondary/90">
+      <div className="relative h-44 overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 p-3">
         {hasImage ? (
-          <img
-            src={project.image}
-            alt={`${project.title} screenshot`}
-            loading="lazy"
-            onError={() => setImgError(true)}
-            className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-          />
+          <div className="flex h-full items-center justify-center rounded-xl border border-slate-200/80 bg-white p-2 shadow-inner shadow-slate-200/50">
+            <img
+              src={imageSrc}
+              alt={`${project.title} screenshot`}
+              loading="lazy"
+              onError={() => setImgError(true)}
+              className="max-h-full max-w-full rounded-lg object-contain object-top transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
         ) : (
           <>
             <div className="absolute inset-0 grid-bg opacity-20 dark:opacity-10" />
