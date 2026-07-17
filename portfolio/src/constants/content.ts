@@ -9,7 +9,7 @@ import type {
 
 export const SITE = {
   name: 'Bernard Justin Dayao',
-  role: 'Full-Stack Developer',
+  role: 'Aspiring Cybersecurity Professional | Full-Stack Developer',
   tagline: 'Building secure, scalable, and user-centered digital experiences with modern web technologies.',
   email: 'dbernardjustin@gmail.com',
   phone: '+63 939 712 3358',
